@@ -387,3 +387,11 @@ window.addEventListener("resize",function(){
 })
 
 init();
+
+const audioChrismas = document.querySelector("audio");
+if(audioChrismas) {
+  document.addEventListener("mousemove", () => {
+  console.log("Yes");
+  audioChrismas.play();
+  });
+}
